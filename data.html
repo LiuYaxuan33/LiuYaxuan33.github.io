@@ -3,6 +3,36 @@ layout: default
 title: "数据与代码 | Data & Code"
 permalink: /data/
 ---
-<header class="page-hero container narrow-left"><p class="eyebrow"><span class="lang-zh">开放研究</span><span class="lang-en">Open research</span></p><h1><span class="lang-zh">数据与代码</span><span class="lang-en">Data & Code</span></h1><p class="lang-zh">公开数据、变量说明、复现程序与推荐引用方式。受许可限制的数据会提供获取说明，不会在此重新分发。</p><p class="lang-en">Public datasets, documentation, replication programs, and suggested citations. Restricted data are documented but not redistributed.</p></header>
-<div class="container dataset-grid">{% for data in site.data.datasets %}<article class="dataset-card"><div class="dataset-meta"><span>{{ data.version }}</span><span>Updated {{ data.updated }}</span></div><h2 class="lang-zh">{{ data.title_zh }}</h2><h2 class="lang-en">{{ data.title_en }}</h2><p class="related">{{ data.related_paper }}</p><p class="lang-zh">{{ data.description_zh }}</p><p class="lang-en">{{ data.description_en }}</p><dl><div><dt>Format</dt><dd>{{ data.format }}</dd></div><div><dt>License</dt><dd>{{ data.license }}</dd></div><div><dt>Citation</dt><dd>{{ data.citation }}</dd></div></dl><div class="resource-links">{% if data.download != "" %}<a href="{{ data.download }}"><span class="lang-zh">下载数据</span><span class="lang-en">Download</span></a>{% endif %}{% if data.readme != "" %}<a href="{{ data.readme }}">README</a>{% endif %}{% if data.codebook != "" %}<a href="{{ data.codebook }}">Codebook</a>{% endif %}{% if data.code != "" %}<a href="{{ data.code }}">Code</a>{% endif %}</div></article>{% endfor %}</div>
-
+<header class="page-hero container narrow-left">
+    <p class="eyebrow"><span class="lang-zh">开放研究</span><span class="lang-en">Open research</span></p>
+    <h1><span class="lang-zh">数据与代码</span><span class="lang-en">Data & Code</span></h1>
+    <p class="lang-zh">公开数据、变量说明、复现程序与推荐引用方式。</p>
+    <p class="lang-en">Public datasets, documentation, replication programs, and suggested citations.</p>
+</header>
+<div class="container dataset-grid">{% for data in site.data.datasets %}<article class="dataset-card">
+        <div class="dataset-meta"><span>{{ data.version }}</span><span>Updated {{ data.updated }}</span></div>
+        <h2 class="lang-zh">{{ data.title_zh }}</h2>
+        <h2 class="lang-en">{{ data.title_en }}</h2>
+        <p class="related">{{ data.related_paper }}</p>
+        <p class="lang-zh">{{ data.description_zh }}</p>
+        <p class="lang-en">{{ data.description_en }}</p>
+        <dl>
+            <div>
+                <dt>Format</dt>
+                <dd>{{ data.format }}</dd>
+            </div>
+            <div>
+                <dt>License</dt>
+                <dd>{{ data.license }}</dd>
+            </div>
+            <div>
+                <dt>Citation</dt>
+                <dd>{{ data.citation }}</dd>
+            </div>
+        </dl>
+        <div class="resource-links">{% if data.download != "" %}<a href="{{ data.download }}"><span
+                    class="lang-zh">下载数据</span><span class="lang-en">Download</span></a>{% endif %}{% if data.readme !=
+            "" %}<a href="{{ data.readme }}">README</a>{% endif %}{% if data.codebook != "" %}<a
+                href="{{ data.codebook }}">Codebook</a>{% endif %}{% if data.code != "" %}<a
+                href="{{ data.code }}">Code</a>{% endif %}</div>
+    </article>{% endfor %}</div>
