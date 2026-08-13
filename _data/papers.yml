@@ -1,17 +1,17 @@
 # type 可用：job_market、working、publication、progress、other
 # 没有的链接保留为空字符串 ""，页面会自动隐藏按钮。
-- title: "示例论文标题：请替换为你的论文题目"
+- title: "From Land to Liquidity: Compensation Design and Local Population Reallocation in Taiwan’s Land-to-the-Tiller Reform"
   authors: "Yaxuan Liu"
   year: "2026"
-  type: "working"
+  type: "Progress"
   featured: true
-  status_zh: "工作论文"
-  status_en: "Working Paper"
+  status_zh: "本科生科研阶段性成果"
+  status_en: "Undergraduate Research Progress"
   journal: ""
   abstract_zh: >-
-    用三到五句话说明研究问题、识别或建模方法、数据以及主要结论。摘要可以比论文正式摘要更容易阅读。
+    本文利用台湾1953年“耕者有其田”改革中现金与实物债券偿付方式的差异，考察补偿资产的流动性与改革后地方人口变化之间的关系。
   abstract_en: >-
-    Summarize the research question, empirical or modeling strategy, data, and main findings in three to five accessible sentences.
+    This paper exploits differences between cash and in-kind bond repayments under Taiwan’s 1953 Land-to-the-Tiller reform to examine the relationship between compensation liquidity and post-reform local population change.
   links:
     pdf: ""
     journal: ""
@@ -20,16 +20,18 @@
     data: ""
     code: ""
 
-- title: "第二篇示例论文"
-  authors: "Yaxuan Liu, Coauthor Name"
-  year: "2025"
-  type: "publication"
+- title: "再看政府与企业：暑期调研报告"
+  authors: "Yaxuan Liu"
+  year: "2026"
+  type: "Other"
   featured: true
-  status_zh: "已发表"
-  status_en: "Published"
-  journal: "Journal Name, Volume(Issue), pages"
-  abstract_zh: "请替换为论文摘要。"
-  abstract_en: "Replace this text with the paper abstract."
+  status_zh: "课程论文"
+  status_en: "Course Paper"
+  journal: ""
+  abstract_zh: >-
+    本文基于2025、2026两年暑假在我国H省和S省的调研材料，尝试分析了当代企业的非独立性与两种从属关系。
+  abstract_en: >-
+    This article is based on research materials collected during the summer of 2025 and 2026 in H and S provinces in China. It attempts to analyze the non-independence of contemporary enterprises and two types of subordinate relationships.
   links:
     pdf: ""
     journal: ""
@@ -38,3 +40,122 @@
     data: ""
     code: ""
 
+- title: "从新教教派到新教伦理：韦伯宗教社会学与现代政党和政治论述的联系"
+  authors: "Yaxuan Liu"
+  year: "2026"
+  type: "Other"
+  featured: true
+  status_zh: "课程论文"
+  status_en: "Course Paper"
+  journal: ""
+  abstract_zh: >-
+    本文以马克斯·韦伯的后期著作为中心，考察新教教派、新教伦理与现代政党、民主制及政治组织论述之间的联系。
+  abstract_en: >-
+    This article focuses on Max Weber's later works and looks at the connections between discussions on Protestant sects, Protestant ethics, and modern parties, democracy, and political organizations.
+  links:
+    pdf: ""
+    journal: ""
+    appendix: ""
+    slides: ""
+    data: ""
+    code: ""
+
+- title: "制作西斯廷圣母或制造女性欢愉：《多拉》与两种性爱经济"
+  authors: "Yaxuan Liu"
+  year: "2026"
+  type: "Other"
+  featured: true
+  status_zh: "课程论文"
+  status_en: "Course Paper"
+  journal: ""
+  abstract_zh: >-
+    本文以弗洛伊德的《多拉》案例为中心，讨论了案例文本与约翰·奥尼尔在《灵魂的家庭经济学》中的分析。
+  abstract_en: >-
+    This article focuses on Freud's Dora case and discusses the case text and John O'Neill's analysis in The Family Economy of the Soul.
+  links:
+    pdf: ""
+    journal: ""
+    appendix: ""
+    slides: ""
+    data: ""
+    code: ""
+
+- title: "阿奎那经济思想的路径：基于《神学大全》第二集第二部第77、78题的评述"
+  authors: "Yaxuan Liu"
+  year: "2026"
+  type: "Other"
+  featured: true
+  status_zh: "课程论文"
+  status_en: "Course Paper"
+  journal: ""
+  abstract_zh: >-
+    本文对托马斯·阿奎那的《神学大全》第二集第二部第77、78题作了经济思想史的评述。
+  abstract_en: >-
+    This article discusses Thomas Aquinas's Summa Theologiae, Part II, Question 77 and 78 from an economic thought history perspective.
+  links:
+    pdf: ""
+    journal: ""
+    appendix: ""
+    slides: ""
+    data: ""
+    code: ""
+
+- title: "被指认的家族：鹿港辜家父子的社会维稳想象与政商合流模式"
+  authors: "Yaxuan Liu"
+  year: "2025"
+  type: "Other"
+  featured: true
+  status_zh: "课程论文"
+  status_en: "Course Paper"
+  journal: ""
+  abstract_zh: >-
+    本文以辜显荣、辜振甫父子的传记与相关电报史料为基础，通过比较两人在政权更替、政治参与和商业经营中的典型事件，考察鹿港辜家如何形成并延续其家族认同。
+  abstract_en: >-
+    This article is based on the biographies of Gu Xianrong and Gu Zhenfu, father and son, as well as related telegram records. By comparing their typical experiences in regime changes, political involvement, and business operations, it looks at how the Gu family in Lukang formed and maintained their family identity.
+  links:
+    pdf: ""
+    journal: ""
+    appendix: ""
+    slides: ""
+    data: ""
+    code: ""
+
+- title: "觉来小园行遍：论张五常经济思想"
+  authors: "Yaxuan Liu"
+  year: "2025"
+  type: "Other"
+  featured: true
+  status_zh: "课程论文"
+  status_en: "Course Paper"
+  journal: ""
+  abstract_zh: >-
+    本文对张五常经济思想作了简单的梳理与评述。
+  abstract_en: >-
+    This article provides a brief overview and commentary on the economic thought of Steven N. S. Cheung.
+  links:
+    pdf: ""
+    journal: ""
+    appendix: ""
+    slides: ""
+    data: ""
+    code: ""
+
+- title: "作为沉默的言说——论毕飞宇《打野》"
+  authors: "Yaxuan Liu"
+  year: "2025"
+  type: "Other"
+  featured: true
+  status_zh: "课程论文"
+  status_en: "Course Paper"
+  journal: ""
+  abstract_zh: >-
+    本文分析了毕飞宇发表于2025年第5期《收获》的短篇小说《打野》。
+  abstract_en: >-
+    This article analyzes Bi Feiyu's short story "打野" published in the 5th issue of Harvest in 2025.
+  links:
+    pdf: ""
+    journal: ""
+    appendix: ""
+    slides: ""
+    data: ""
+    code: ""
