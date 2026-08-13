@@ -5,7 +5,7 @@
       <p><span class="lang-zh">个人主页</span><span class="lang-en">Personal Website</span></p>
     </div>
     <div class="footer-right">
-      <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+      {% for email in site.data.profile.emails %}{% if email.address != "" %}<a href="mailto:{{ email.address }}">{{ email.address }}</a>{% unless forloop.last %}<br>{% endunless %}{% endif %}{% endfor %}
       <p>© <span id="current-year">2026</span> {{ site.data.profile.name_en }}</p>
     </div>
   </div>

@@ -10,7 +10,11 @@ affiliation_en: "Peking University, Yuanpei College"
 location_zh: "北京，中国"
 location_en: "Beijing, China"
 
-email: "Liuyaxuan33@gmail.com, Liuyaxuan33@stu.pku.edu.cn"
+emails:
+  - label: "Gmail"
+    address: "Liuyaxuan33@gmail.com"
+  - label: "PKU Email"
+    address: "Liuyaxuan33@stu.pku.edu.cn"
 photo: "/assets/images/profile.jpg" # 上传照片后改为 /assets/images/profile.jpg
 photo_alt_zh: "刘雅轩的个人照片"
 photo_alt_en: "Portrait of Yaxuan Liu"

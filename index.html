@@ -22,7 +22,7 @@ description: "刘雅轩的个人主页 | Academic website of Yaxuan Liu"
             class="lang-en">View research</span></a>
       </div>
       <div class="profile-links">
-        <a href="mailto:{{ site.data.profile.email }}">Email</a>
+        {% for email in site.data.profile.emails %}{% if email.address != "" %}<a href="mailto:{{ email.address }}">{{ email.label | default: "Email" }}</a>{% endif %}{% endfor %}
         {% for link in site.data.profile.links %}{% if link.url != "" %}<a href="{{ link.url }}" target="_blank"
           rel="noopener">{{ link.label }} ↗</a>{% endif %}{% endfor %}
       </div>

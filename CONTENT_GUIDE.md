@@ -18,7 +18,7 @@
 编辑 `_data/profile.yml`。需要替换的内容包括：
 
 - 中英文姓名、身份和机构
-- 所在地与邮箱
+- 所在地与邮箱（`emails` 可以添加任意数量；每项填写 `label` 和 `address`）
 - 中英文个人简介
 - 中英文研究方向
 - Google Scholar、ORCID、RePEc 和 GitHub 链接
