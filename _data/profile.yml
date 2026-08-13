@@ -3,7 +3,7 @@ name_zh: "刘雅轩"
 name_en: "Yaxuan Liu"
 initials: "YL"
 
-title_zh: "PPE（经济）方向本科生"
+title_zh: "PPE（主修经济学）方向本科生"
 title_en: "Undergraduate in Philosophy, Politics and Economics, with a special focus in Economics"
 affiliation_zh: "北京大学元培学院"
 affiliation_en: "Peking University, Yuanpei College"
@@ -11,33 +11,27 @@ location_zh: "北京，中国"
 location_en: "Beijing, China"
 
 email: "Liuyaxuan33@gmail.com, Liuyaxuan33@stu.pku.edu.cn"
-photo: "" # 上传照片后改为 /assets/images/profile.jpg
+photo: "/assets/images/profile.jpg" # 上传照片后改为 /assets/images/profile.jpg
 photo_alt_zh: "刘雅轩的个人照片"
 photo_alt_en: "Portrait of Yaxuan Liu"
-cv: "" # 上传 CV 后改为 /files/cv/Liu_Yaxuan_CV.pdf
-cv_updated: "" # 例如 2026-08
+cv: "/files/cv/Liu_Yaxuan_CV.pdf" # 上传 CV 后改为 /files/cv/Liu_Yaxuan_CV.pdf
+cv_updated: "2026-08" # 例如 2026-08
 
 bio_zh: >-
-  请在这里用两到四句话介绍你的教育背景、当前研究和职业目标。这段文字会显示在首页最醒目的位置。
+  我目前就读于北京大学元培学院，修读哲学、政治学与经济学（PPE）专业，主修经济学，并曾赴加州大学伯克利分校交换学习。
 bio_en: >-
-  Introduce your training, current research, and professional interests in two to four sentences. This paragraph appears prominently on the home page.
+  I am an undergraduate in Philosophy, Politics & Economics (PPE, with a focus on Economics) at Peking University’s Yuanpei College, with exchange experience in economics at UC Berkeley.
 
 research_interests_zh:
-  - "研究方向一"
-  - "研究方向二"
-  - "研究方向三"
+  - "经济史"
+  - "历史社会学"
+  - "应用微观经济理论"
 research_interests_en:
-  - "Research field one"
-  - "Research field two"
-  - "Research field three"
+  - "Economic History"
+  - "Historical Sociology"
+  - "Applied Microeconomic Theory"
 
 links:
-  - label: "Google Scholar"
-    url: ""
-  - label: "ORCID"
-    url: ""
-  - label: "RePEc"
-    url: ""
   - label: "GitHub"
     url: "https://github.com/LiuYaxuan33"
 

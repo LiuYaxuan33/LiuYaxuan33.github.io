@@ -1,11 +1,7 @@
 # 日期建议写成 YYYY-MM-DD；最新内容放在最上面。
 - date: "2026-08-13"
-  zh: "网站框架建立。请把这条示例动态替换为论文、会议或任职消息。"
-  en: "Website framework created. Replace this sample with a paper, conference, or appointment update."
+  zh: "网站建立。"
+  en: "Website created."
   url: ""
 
-- date: "2026-01-01"
-  zh: "示例：在某学术会议报告工作论文。"
-  en: "Example: Presented a working paper at an academic conference."
-  url: ""
 
