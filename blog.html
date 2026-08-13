@@ -3,6 +3,22 @@ layout: default
 title: "研究博客 | Research Blog"
 permalink: /blog/
 ---
-<header class="page-hero container narrow-left"><p class="eyebrow"><span class="lang-zh">笔记 · 评论 · 方法</span><span class="lang-en">Notes · Commentary · Methods</span></p><h1><span class="lang-zh">研究博客</span><span class="lang-en">Research Blog</span></h1><p class="lang-zh">关于经济学研究、数据方法、论文阅读与学术生活的长短文章。</p><p class="lang-en">Notes on economics, empirical methods, papers, and academic life.</p></header>
-<div class="container blog-index">{% for post in site.posts %}<article class="blog-row"><time>{{ post.date | date: "%Y-%m-%d" }}</time><div><h2 class="lang-zh"><a href="{{ post.url | relative_url }}">{{ post.title_zh | default: post.title }}</a></h2><h2 class="lang-en"><a href="{{ post.url | relative_url }}">{{ post.title_en | default: post.title }}</a></h2><p class="lang-zh">{{ post.excerpt_zh }}</p><p class="lang-en">{{ post.excerpt_en }}</p><div class="post-tags">{% for tag in post.tags %}<span>{{ tag }}</span>{% endfor %}</div></div></article>{% endfor %}</div>
-
+<header class="page-hero container narrow-left">
+    <p class="eyebrow"><span class="lang-zh">笔记 · 评论 · 方法</span><span class="lang-en">Notes · Commentary ·
+            Methods</span></p>
+    <h1><span class="lang-zh">个人博客</span><span class="lang-en">Personal Blog</span></h1>
+    <p class="lang-zh">吾侪所学关天意，并世相知妒道真。</p>
+    <p class="lang-en">In the beginning was the Word, and the Word was with God, and the Word was God.</p>
+</header>
+<div class="container blog-index">{% for post in site.posts %}<article class="blog-row"><time>{{ post.date | date:
+            "%Y-%m-%d" }}</time>
+        <div>
+            <h2 class="lang-zh"><a href="{{ post.url | relative_url }}">{{ post.title_zh | default: post.title }}</a>
+            </h2>
+            <h2 class="lang-en"><a href="{{ post.url | relative_url }}">{{ post.title_en | default: post.title }}</a>
+            </h2>
+            <p class="lang-zh">{{ post.excerpt_zh }}</p>
+            <p class="lang-en">{{ post.excerpt_en }}</p>
+            <div class="post-tags">{% for tag in post.tags %}<span>{{ tag }}</span>{% endfor %}</div>
+        </div>
+    </article>{% endfor %}</div>

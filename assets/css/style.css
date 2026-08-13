@@ -136,6 +136,10 @@ code { padding: 2px 5px; background: #eeece5; font-size: .9em; }
 .prose h2 { margin-top: 2em; font-size: 30px; }
 .prose a { word-break: break-word; }
 .prose code { font-family: ui-monospace, monospace; font-size: .8em; }
+.post-comments { margin-top: 72px; padding-top: 34px; border-top: 1px solid var(--line); }
+.post-comments h2 { margin: 0; font-family: var(--serif); font-size: 30px; font-weight: 500; }
+.comments-note { margin: 8px 0 26px; color: var(--muted); font-size: 14px; }
+.giscus, .giscus-frame { width: 100%; }
 .post-footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
 
 .site-footer { padding: 40px 0; background: var(--accent-dark); color: #edf2f5; }
@@ -172,7 +176,7 @@ code { padding: 2px 5px; background: #eeece5; font-size: .9em; }
 }
 
 @media print {
-  .site-header, .site-footer, .hero-actions { display: none; }
+  .site-header, .site-footer, .hero-actions, .post-comments { display: none; }
   body { background: white; color: black; }
   a { color: black; }
 }

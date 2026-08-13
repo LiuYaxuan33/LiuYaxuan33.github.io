@@ -1,0 +1,25 @@
+{% assign comments = site.giscus %}
+{% if comments.enabled and page.comments != false and comments.repo_id != "" and comments.category_id != "" %}
+<section class="post-comments" aria-labelledby="comments-title">
+  <h2 id="comments-title"><span class="lang-zh">评论</span><span class="lang-en">Comments</span></h2>
+  <p class="comments-note lang-zh">欢迎通过 GitHub 参与讨论。</p>
+  <p class="comments-note lang-en">Join the discussion with your GitHub account.</p>
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ comments.repo | escape }}"
+          data-repo-id="{{ comments.repo_id | escape }}"
+          data-category="{{ comments.category | escape }}"
+          data-category-id="{{ comments.category_id | escape }}"
+          data-mapping="{{ comments.mapping | default: 'pathname' }}"
+          data-strict="{{ comments.strict | default: '1' }}"
+          data-reactions-enabled="{{ comments.reactions_enabled | default: '1' }}"
+          data-emit-metadata="0"
+          data-input-position="{{ comments.input_position | default: 'top' }}"
+          data-theme="{{ comments.theme | default: 'light' }}"
+          data-lang="{{ comments.lang | default: 'zh-CN' }}"
+          loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+  <noscript><p class="comments-note"><span class="lang-zh">请启用 JavaScript 以查看评论。</span><span class="lang-en">Enable JavaScript to view comments.</span></p></noscript>
+</section>
+{% endif %}

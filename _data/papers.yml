@@ -9,9 +9,9 @@
   status_en: "Undergraduate Research Progress"
   journal: ""
   abstract_zh: >-
-    本文利用台湾1953年“耕者有其田”改革中现金与实物债券偿付方式的差异，考察补偿资产的流动性与改革后地方人口变化之间的关系。
+    本文利用《实施耕者有其田条例》 (民国42年1月26日)及其后续修正案中对耕地征收之补偿方式的规定设计因果识别策略，提供“耕者有其田”通过将土地资产释放为流动性促进农村乡镇的人口流出的定量证据。
   abstract_en: >-
-    This paper exploits differences between cash and in-kind bond repayments under Taiwan’s 1953 Land-to-the-Tiller reform to examine the relationship between compensation liquidity and post-reform local population change.
+    This paper uses the provisions on compensation methods for cultivated land expropriation in the Land-to-the-Tiller Reform Act (January 26, 1953) and its subsequent amendments to design a causal identification strategy, providing quantitative evidence that the Land-to-the-Tiller Reform promoted rural township population outflows by releasing land assets into liquidity.
   links:
     pdf: ""
     journal: ""
@@ -24,7 +24,7 @@
   authors: "Yaxuan Liu"
   year: "2026"
   type: "other"
-  featured: true
+  featured: False
   status_zh: "课程论文"
   status_en: "Course Paper"
   journal: ""
@@ -44,7 +44,7 @@
   authors: "Yaxuan Liu"
   year: "2026"
   type: "other"
-  featured: true
+  featured: false
   status_zh: "课程论文"
   status_en: "Course Paper"
   journal: ""
@@ -64,7 +64,7 @@
   authors: "Yaxuan Liu"
   year: "2026"
   type: "other"
-  featured: true
+  featured: false
   status_zh: "课程论文"
   status_en: "Course Paper"
   journal: ""
@@ -84,7 +84,7 @@
   authors: "Yaxuan Liu"
   year: "2026"
   type: "other"
-  featured: true
+  featured: 
   status_zh: "课程论文"
   status_en: "Course Paper"
   journal: ""
@@ -104,7 +104,7 @@
   authors: "Yaxuan Liu"
   year: "2025"
   type: "other"
-  featured: true
+  featured: false
   status_zh: "课程论文"
   status_en: "Course Paper"
   journal: ""
@@ -124,7 +124,7 @@
   authors: "Yaxuan Liu"
   year: "2025"
   type: "other"
-  featured: true
+  featured: false
   status_zh: "课程论文"
   status_en: "Course Paper"
   journal: ""
@@ -144,7 +144,7 @@
   authors: "Yaxuan Liu"
   year: "2025"
   type: "other"
-  featured: true
+  featured: false
   status_zh: "课程论文"
   status_en: "Course Paper"
   journal: ""

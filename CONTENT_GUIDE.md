@@ -124,6 +124,21 @@ tags: [计量经济学, 数据]
 
 正文分别放在 `<section class="lang-zh" markdown="1">` 和 `<section class="lang-en" markdown="1">` 之间。如果某篇文章暂时只有一种语言，可以把另一语言写成简短摘要，并注明全文语言。
 
+### 博客评论（Giscus）
+
+评论组件已经接入所有博客文章，但在取得 GitHub Discussions 配置前默认关闭。启用方法：
+
+1. 在网站仓库的 **Settings → General → Features** 中启用 **Discussions**。
+2. 为 `LiuYaxuan33/LiuYaxuan33.github.io` 安装 [Giscus App](https://github.com/apps/giscus)。
+3. 在 [Giscus 配置页](https://giscus.app/zh-CN) 填写仓库，选择 `pathname` 映射和 `Announcements` 分类。
+4. 将生成代码中的 `data-repo-id`、`data-category` 和 `data-category-id` 填入 `_config.yml` 的 `giscus` 配置，并把 `enabled` 改为 `true`。
+
+如需关闭某一篇文章的评论，在该文章顶部的信息区加入：
+
+```yml
+comments: false
+```
+
 ## 九、PDF 和文件命名
 
 - 使用英文字母、数字、连字符和下划线。
