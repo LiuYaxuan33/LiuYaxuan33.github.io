@@ -1,0 +1,62 @@
+---
+layout: default
+title: "首页 | Home"
+description: "刘雅轩的个人学术主页 | Academic website of Yaxuan Liu"
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="lang-zh">经济学 · 研究 · 数据</span><span class="lang-en">Economics · Research · Data</span></p>
+      <h1><span>{{ site.data.profile.name_zh }}</span><small>{{ site.data.profile.name_en }}</small></h1>
+      <p class="role lang-zh">{{ site.data.profile.title_zh }}<br>{{ site.data.profile.affiliation_zh }}</p>
+      <p class="role lang-en">{{ site.data.profile.title_en }}<br>{{ site.data.profile.affiliation_en }}</p>
+      <p class="bio lang-zh">{{ site.data.profile.bio_zh }}</p>
+      <p class="bio lang-en">{{ site.data.profile.bio_en }}</p>
+      <div class="hero-actions">
+        {% if site.data.profile.cv != "" %}<a class="button primary" href="{{ site.data.profile.cv | relative_url }}" download><span class="lang-zh">下载 CV</span><span class="lang-en">Download CV</span></a>{% else %}<span class="button primary disabled" title="请先在 profile.yml 中填写 CV 路径"><span class="lang-zh">CV 待上传</span><span class="lang-en">CV coming soon</span></span>{% endif %}
+        <a class="button" href="{{ '/research/' | relative_url }}"><span class="lang-zh">查看研究</span><span class="lang-en">View research</span></a>
+      </div>
+      <div class="profile-links">
+        <a href="mailto:{{ site.data.profile.email }}">Email</a>
+        {% for link in site.data.profile.links %}{% if link.url != "" %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endif %}{% endfor %}
+      </div>
+    </div>
+    <aside class="portrait-card">
+      {% if site.data.profile.photo != "" %}<img src="{{ site.data.profile.photo | relative_url }}" alt="{{ site.data.profile.photo_alt_zh }}">{% else %}<div class="portrait-placeholder" role="img" aria-label="Profile photo placeholder"><span>{{ site.data.profile.initials }}</span><small><span class="lang-zh">请上传个人照片</span><span class="lang-en">Add your portrait</span></small></div>{% endif %}
+      <div class="portrait-caption">
+        <span class="lang-zh">{{ site.data.profile.location_zh }}</span><span class="lang-en">{{ site.data.profile.location_en }}</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="section-heading">
+    <div><p class="eyebrow"><span class="lang-zh">研究领域</span><span class="lang-en">Fields</span></p><h2><span class="lang-zh">研究兴趣</span><span class="lang-en">Research interests</span></h2></div>
+  </div>
+  <div class="tags lang-zh">{% for item in site.data.profile.research_interests_zh %}<span>{{ item }}</span>{% endfor %}</div>
+  <div class="tags lang-en">{% for item in site.data.profile.research_interests_en %}<span>{{ item }}</span>{% endfor %}</div>
+</section>
+
+<section class="section section-tinted">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow"><span class="lang-zh">论文</span><span class="lang-en">Papers</span></p><h2><span class="lang-zh">精选研究</span><span class="lang-en">Selected research</span></h2></div><a href="{{ '/research/' | relative_url }}"><span class="lang-zh">全部研究</span><span class="lang-en">All research</span> →</a></div>
+    <div class="card-grid">
+      {% assign shown = 0 %}{% for paper in site.data.papers %}{% if paper.featured and shown < 3 %}
+      <article class="paper-card"><div class="paper-top"><span class="status"><span class="lang-zh">{{ paper.status_zh }}</span><span class="lang-en">{{ paper.status_en }}</span></span><span>{{ paper.year }}</span></div><h3>{{ paper.title }}</h3><p class="authors">{{ paper.authors }}</p><p class="journal">{{ paper.journal }}</p><p class="lang-zh">{{ paper.abstract_zh | truncate: 150 }}</p><p class="lang-en">{{ paper.abstract_en | truncate: 180 }}</p></article>
+      {% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section container two-column">
+  <div>
+    <div class="section-heading"><div><p class="eyebrow"><span class="lang-zh">动态</span><span class="lang-en">Updates</span></p><h2><span class="lang-zh">最近消息</span><span class="lang-en">News</span></h2></div></div>
+    <ol class="news-list">{% for item in site.data.news limit: 4 %}<li><time>{{ item.date }}</time><p class="lang-zh">{% if item.url != "" %}<a href="{{ item.url }}">{{ item.zh }}</a>{% else %}{{ item.zh }}{% endif %}</p><p class="lang-en">{% if item.url != "" %}<a href="{{ item.url }}">{{ item.en }}</a>{% else %}{{ item.en }}{% endif %}</p></li>{% endfor %}</ol>
+  </div>
+  <div>
+    <div class="section-heading"><div><p class="eyebrow"><span class="lang-zh">写作</span><span class="lang-en">Writing</span></p><h2><span class="lang-zh">最新文章</span><span class="lang-en">Latest posts</span></h2></div></div>
+    <div class="post-list">{% for post in site.posts limit: 3 %}<article><time>{{ post.date | date: "%Y-%m-%d" }}</time><h3 class="lang-zh"><a href="{{ post.url | relative_url }}">{{ post.title_zh | default: post.title }}</a></h3><h3 class="lang-en"><a href="{{ post.url | relative_url }}">{{ post.title_en | default: post.title }}</a></h3><p class="lang-zh">{{ post.excerpt_zh }}</p><p class="lang-en">{{ post.excerpt_en }}</p></article>{% endfor %}</div>
+  </div>
+</section>
+

@@ -1,0 +1,16 @@
+# 大型数据建议把 download 指向 Zenodo、OSF 或 Dataverse。
+- title_zh: "示例研究数据集"
+  title_en: "Sample Research Dataset"
+  version: "v1.0"
+  updated: "2026-08-13"
+  related_paper: "示例论文标题"
+  description_zh: "说明数据的观测单位、时间范围、地理范围和主要变量。"
+  description_en: "Describe the unit of observation, time span, geographic coverage, and key variables."
+  format: "CSV / Stata / R"
+  license: "请填写许可协议 / Add a license"
+  citation: "Liu, Yaxuan (2026). Sample Research Dataset, v1.0."
+  download: ""
+  readme: ""
+  codebook: ""
+  code: ""
+

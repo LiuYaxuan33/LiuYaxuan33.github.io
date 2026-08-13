@@ -1,0 +1,40 @@
+# type 可用：job_market、working、publication、progress、other
+# 没有的链接保留为空字符串 ""，页面会自动隐藏按钮。
+- title: "示例论文标题：请替换为你的论文题目"
+  authors: "Yaxuan Liu"
+  year: "2026"
+  type: "working"
+  featured: true
+  status_zh: "工作论文"
+  status_en: "Working Paper"
+  journal: ""
+  abstract_zh: >-
+    用三到五句话说明研究问题、识别或建模方法、数据以及主要结论。摘要可以比论文正式摘要更容易阅读。
+  abstract_en: >-
+    Summarize the research question, empirical or modeling strategy, data, and main findings in three to five accessible sentences.
+  links:
+    pdf: ""
+    journal: ""
+    appendix: ""
+    slides: ""
+    data: ""
+    code: ""
+
+- title: "第二篇示例论文"
+  authors: "Yaxuan Liu, Coauthor Name"
+  year: "2025"
+  type: "publication"
+  featured: true
+  status_zh: "已发表"
+  status_en: "Published"
+  journal: "Journal Name, Volume(Issue), pages"
+  abstract_zh: "请替换为论文摘要。"
+  abstract_en: "Replace this text with the paper abstract."
+  links:
+    pdf: ""
+    journal: ""
+    appendix: ""
+    slides: ""
+    data: ""
+    code: ""
+

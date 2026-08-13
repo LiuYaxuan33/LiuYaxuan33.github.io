@@ -1,0 +1,43 @@
+# 这是最常编辑的文件。双引号中的内容可以直接替换。
+name_zh: "刘雅轩"
+name_en: "Yaxuan Liu"
+initials: "YL"
+
+title_zh: "请填写当前身份，例如：经济学博士生"
+title_en: "Your current title, e.g. PhD Student in Economics"
+affiliation_zh: "请填写学校、院系或机构"
+affiliation_en: "Your university, department, or institution"
+location_zh: "城市，国家/地区"
+location_en: "City, Country/Region"
+
+email: "your.email@example.com"
+photo: "" # 上传照片后改为 /assets/images/profile.jpg
+photo_alt_zh: "刘雅轩的个人照片"
+photo_alt_en: "Portrait of Yaxuan Liu"
+cv: "" # 上传 CV 后改为 /files/cv/Liu_Yaxuan_CV.pdf
+cv_updated: "" # 例如 2026-08
+
+bio_zh: >-
+  请在这里用两到四句话介绍你的教育背景、当前研究和职业目标。这段文字会显示在首页最醒目的位置。
+bio_en: >-
+  Introduce your training, current research, and professional interests in two to four sentences. This paragraph appears prominently on the home page.
+
+research_interests_zh:
+  - "研究方向一"
+  - "研究方向二"
+  - "研究方向三"
+research_interests_en:
+  - "Research field one"
+  - "Research field two"
+  - "Research field three"
+
+links:
+  - label: "Google Scholar"
+    url: ""
+  - label: "ORCID"
+    url: ""
+  - label: "RePEc"
+    url: ""
+  - label: "GitHub"
+    url: "https://github.com/LiuYaxuan33"
+

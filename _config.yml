@@ -1,0 +1,25 @@
+title: "刘雅轩 | Yaxuan Liu"
+description: "刘雅轩的个人学术主页与研究博客 | Academic website and research blog of Yaxuan Liu"
+url: "https://liuyaxuan33.github.io"
+baseurl: ""
+lang: "zh-CN"
+timezone: "Asia/Shanghai"
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - CONTENT_GUIDE.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - outputs
+  - work
