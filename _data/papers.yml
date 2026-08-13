@@ -1,5 +1,5 @@
 # type 可用：job_market、working、publication、progress、other
-# 没有的链接保留为空字符串 ""，页面会自动隐藏按钮。
+# data 使用链接列表；其他没有的链接保留为空字符串 ""，页面会自动隐藏按钮。
 - title: "From Land to Liquidity: Compensation Design and Local Population Reallocation in Taiwan’s Land-to-the-Tiller Reform"
   authors: "Yaxuan Liu"
   year: "2026"
@@ -17,7 +17,13 @@
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data:
+      - label_zh: "户籍人口面板"
+        label_en: "Population Panel"
+        url: "/files/data/taiwan_household_registration_population_panel_1947_1958.zip"
+      - label_zh: "耕地调查数据"
+        label_en: "Land Survey"
+        url: "/files/data/taiwan_land_survey_1950.zip"
     code: ""
 
 - title: "再看政府与企业：暑期调研报告"
@@ -37,7 +43,7 @@
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data: []
     code: ""
 
 - title: "从新教教派到新教伦理：韦伯宗教社会学与现代政党和政治论述的联系"
@@ -57,7 +63,7 @@
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data: []
     code: ""
 
 - title: "制作西斯廷圣母或制造女性欢愉：《多拉》与两种性爱经济"
@@ -77,7 +83,7 @@
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data: []
     code: ""
 
 - title: "阿奎那经济思想的路径：基于《神学大全》第二集第二部第77、78题的评述"
@@ -97,7 +103,7 @@
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data: []
     code: ""
 
 - title: "被指认的家族：鹿港辜家父子的社会维稳想象与政商合流模式"
@@ -117,7 +123,7 @@
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data: []
     code: ""
 
 - title: "觉来小园行遍：论张五常经济思想"
@@ -137,10 +143,10 @@
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data: []
     code: ""
 
-- title: "作为沉默的言说——论毕飞宇《打野》"
+- title: "作为沉默的言说：论毕飞宇《打野》"
   authors: "Yaxuan Liu"
   year: "2025"
   type: "other"
@@ -157,5 +163,5 @@
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data: []
     code: ""

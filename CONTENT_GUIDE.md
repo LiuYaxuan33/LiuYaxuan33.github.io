@@ -67,7 +67,10 @@ cv_updated: "2026-08"
     journal: ""
     appendix: ""
     slides: ""
-    data: ""
+    data:
+      - label_zh: "数据集名称"
+        label_en: "Dataset Name"
+        url: "/files/data/dataset-name.zip"
     code: ""
 ```
 
@@ -79,7 +82,9 @@ cv_updated: "2026-08"
 - `progress`：进行中的研究
 - `other`：其他成果
 
-`featured: true` 表示在首页展示。没有的链接保留 `""`，对应按钮会自动隐藏。
+`featured: true` 表示在首页展示。除 `data` 外，没有的链接保留 `""`，对应按钮会自动隐藏。
+
+`data` 是一个链接列表，一篇论文可以添加任意数量的数据集。每个链接填写中英文按钮名称和地址；没有数据链接时写成 `data: []`。
 
 ## 六、发布研究数据
 

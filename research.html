@@ -33,8 +33,9 @@ permalink: /research/
             href="{{ paper.links.pdf | relative_url }}">PDF</a>{% endif %}{% if paper.links.journal != "" %}<a
             href="{{ paper.links.journal }}">Journal ↗</a>{% endif %}{% if paper.links.appendix != "" %}<a
             href="{{ paper.links.appendix | relative_url }}">Appendix</a>{% endif %}{% if paper.links.slides != "" %}<a
-            href="{{ paper.links.slides | relative_url }}">Slides</a>{% endif %}{% if paper.links.data != "" %}<a
-            href="{{ paper.links.data }}">Data</a>{% endif %}{% if paper.links.code != "" %}<a
+            href="{{ paper.links.slides | relative_url }}">Slides</a>{% endif %}{% for data_link in paper.links.data %}{% assign data_url = data_link.url %}{% unless data_url contains "://" %}{% assign data_url = data_url | relative_url %}{% endunless %}<a
+            href="{{ data_url }}"><span class="lang-zh">{{ data_link.label_zh | default: "数据" }}</span><span
+              class="lang-en">{{ data_link.label_en | default: "Data" }}</span></a>{% endfor %}{% if paper.links.code != "" %}<a
             href="{{ paper.links.code }}">Code</a>{% endif %}</div>
       </div>
     </article>{% endfor %}
