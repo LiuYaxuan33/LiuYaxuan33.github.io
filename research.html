@@ -3,12 +3,40 @@ layout: default
 title: "研究 | Research"
 permalink: /research/
 ---
-<header class="page-hero container narrow-left"><p class="eyebrow"><span class="lang-zh">论文与项目</span><span class="lang-en">Papers & projects</span></p><h1><span class="lang-zh">研究</span><span class="lang-en">Research</span></h1><p class="lang-zh">工作论文、进行中的研究与正式发表成果。PDF、数据和复现代码会在可公开时列于论文下方。</p><p class="lang-en">Working papers, ongoing projects, and publications. PDFs, data, and replication code are linked whenever publicly available.</p></header>
+<header class="page-hero container narrow-left">
+  <p class="eyebrow"><span class="lang-zh"></span><span class="lang-en"></span></p>
+  <h1><span class="lang-zh">研究</span><span class="lang-en">Research</span></h1>
+  <p class="lang-zh">工作论文、进行中的研究与正式发表成果。PDF、数据和复现代码会在可公开时列于论文下方。</p>
+  <p class="lang-en">Working papers, ongoing projects, and publications. PDFs, data, and replication code are linked
+    whenever publicly available.</p>
+</header>
 <div class="container research-list">
   {% assign types = "job_market,working,publication,progress,other" | split: "," %}
   {% for type in types %}{% assign group = site.data.papers | where: "type", type %}{% if group.size > 0 %}
-  <section class="paper-group"><h2>{% case type %}{% when "job_market" %}<span class="lang-zh">求职论文</span><span class="lang-en">Job Market Paper</span>{% when "working" %}<span class="lang-zh">工作论文</span><span class="lang-en">Working Papers</span>{% when "publication" %}<span class="lang-zh">正式发表</span><span class="lang-en">Publications</span>{% when "progress" %}<span class="lang-zh">进行中的研究</span><span class="lang-en">Work in Progress</span>{% else %}<span class="lang-zh">其他研究</span><span class="lang-en">Other Research</span>{% endcase %}</h2>
-    {% for paper in group %}<article class="paper-entry"><div class="paper-year">{{ paper.year }}</div><div><h3>{{ paper.title }}</h3><p class="authors">{{ paper.authors }}</p>{% if paper.journal != "" %}<p class="journal">{{ paper.journal }}</p>{% endif %}<details><summary><span class="lang-zh">摘要</span><span class="lang-en">Abstract</span></summary><p class="lang-zh">{{ paper.abstract_zh }}</p><p class="lang-en">{{ paper.abstract_en }}</p></details><div class="resource-links">{% if paper.links.pdf != "" %}<a href="{{ paper.links.pdf | relative_url }}">PDF</a>{% endif %}{% if paper.links.journal != "" %}<a href="{{ paper.links.journal }}">Journal ↗</a>{% endif %}{% if paper.links.appendix != "" %}<a href="{{ paper.links.appendix | relative_url }}">Appendix</a>{% endif %}{% if paper.links.slides != "" %}<a href="{{ paper.links.slides | relative_url }}">Slides</a>{% endif %}{% if paper.links.data != "" %}<a href="{{ paper.links.data }}">Data</a>{% endif %}{% if paper.links.code != "" %}<a href="{{ paper.links.code }}">Code</a>{% endif %}</div></div></article>{% endfor %}
+  <section class="paper-group">
+    <h2>{% case type %}{% when "job_market" %}<span class="lang-zh">求职论文</span><span class="lang-en">Job Market
+        Paper</span>{% when "working" %}<span class="lang-zh">工作论文</span><span class="lang-en">Working Papers</span>{%
+      when "publication" %}<span class="lang-zh">正式发表</span><span class="lang-en">Publications</span>{% when "progress"
+      %}<span class="lang-zh">进行中的研究</span><span class="lang-en">Work in Progress</span>{% else %}<span
+        class="lang-zh">其他研究</span><span class="lang-en">Other Research</span>{% endcase %}</h2>
+    {% for paper in group %}<article class="paper-entry">
+      <div class="paper-year">{{ paper.year }}</div>
+      <div>
+        <h3>{{ paper.title }}</h3>
+        <p class="authors">{{ paper.authors }}</p>{% if paper.journal != "" %}<p class="journal">{{ paper.journal }}</p>
+        {% endif %}<details>
+          <summary><span class="lang-zh">摘要</span><span class="lang-en">Abstract</span></summary>
+          <p class="lang-zh">{{ paper.abstract_zh }}</p>
+          <p class="lang-en">{{ paper.abstract_en }}</p>
+        </details>
+        <div class="resource-links">{% if paper.links.pdf != "" %}<a
+            href="{{ paper.links.pdf | relative_url }}">PDF</a>{% endif %}{% if paper.links.journal != "" %}<a
+            href="{{ paper.links.journal }}">Journal ↗</a>{% endif %}{% if paper.links.appendix != "" %}<a
+            href="{{ paper.links.appendix | relative_url }}">Appendix</a>{% endif %}{% if paper.links.slides != "" %}<a
+            href="{{ paper.links.slides | relative_url }}">Slides</a>{% endif %}{% if paper.links.data != "" %}<a
+            href="{{ paper.links.data }}">Data</a>{% endif %}{% if paper.links.code != "" %}<a
+            href="{{ paper.links.code }}">Code</a>{% endif %}</div>
+      </div>
+    </article>{% endfor %}
   </section>{% endif %}{% endfor %}
 </div>
-
