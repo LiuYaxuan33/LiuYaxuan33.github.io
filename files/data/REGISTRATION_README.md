@@ -1,3 +1,12 @@
+---
+layout: default
+title: "台湾户籍人口面板数据集 README"
+permalink: /data/registration-readme/
+---
+<article class="container narrow dataset-document" markdown="1">
+
+<p class="dataset-document-back"><a href="{{ '/data/' | relative_url }}"><span class="lang-zh">← 返回数据页</span><span class="lang-en">← Back to Data</span></a></p>
+
 # 台湾户籍人口面板数据集（1947—1958）
 
 ## 数据概况
@@ -42,3 +51,5 @@ Liu, Yaxuan (2026). *Taiwan Household Registration Population Panel Dataset (194
 ## English summary
 
 This is an unbalanced locality-level population panel, not a household- or individual-level longitudinal dataset. It contains 2,542 year-unit observations for 237 units from 1947 to 1958. Record-level fields document the population concept, source file, URL when available, source type, and aggregation used to align population records with the 1950 land-reporting geography. License and download URL are intentionally left blank pending publication.
+
+</article>

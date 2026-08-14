@@ -1,3 +1,12 @@
+---
+layout: default
+title: "台湾耕地所有权与经营状况调查数据集 README"
+permalink: /data/land-readme/
+---
+<article class="container narrow dataset-document" markdown="1">
+
+<p class="dataset-document-back"><a href="{{ '/data/' | relative_url }}"><span class="lang-zh">← 返回数据页</span><span class="lang-en">← Back to Data</span></a></p>
+
 # 台湾耕地所有权与经营状况调查数据集（1950）
 
 ## 数据概况
@@ -32,3 +41,5 @@ Liu, Yaxuan (2026). *From Land to Liquidity: Compensation Design and Local Popul
 ## English summary
 
 This package contains three locality-level tables digitized from the 1950 Survey Report on Cultivated Land Ownership and Operation. Each table contains 317 reported localities at county/city, district, and township levels. The reviewed source workbooks are included so users can audit name corrections, arithmetic corrections, and unresolved items. License and download URL are intentionally left blank pending publication.
+
+</article>

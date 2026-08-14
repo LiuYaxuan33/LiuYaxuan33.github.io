@@ -1,3 +1,12 @@
+---
+layout: default
+title: "台湾耕地所有权与经营状况调查数据集 Codebook"
+permalink: /data/land-codebook/
+---
+<article class="container dataset-document" markdown="1">
+
+<p class="dataset-document-back"><a href="{{ '/data/' | relative_url }}"><span class="lang-zh">← 返回数据页</span><span class="lang-en">← Back to Data</span></a></p>
+
 # Codebook
 
 ## Shared locality fields
@@ -54,3 +63,5 @@
 | `unleased_public_*` | 未放租公有耕地 | Public cultivated land not leased out |
 
 例如，`leased_public_dryland_jia` 表示已放租公有旱地面积，`registered_paddy_jia` 表示已登记公有水田面积。原表横线在CSV中编码为数值0；真正缺失的单元格保留为空。
+
+</article>

@@ -11,8 +11,8 @@
   license: ""
   citation: "Liu, Yaxuan (2026). From Land to Liquidity: Compensation Design and Local Population Reallocation in Taiwan’s Land-to-the-Tiller Reform. Work in Progress."
   download: "/files/data/taiwan_household_registration_population_panel_1947_1958_v1.0.zip"
-  readme: "/files/data/REGISTRATION_README.md"
-  codebook: "/files/data/REGISTRATION_CODEBOOK.md"
+  readme: "/data/registration-readme/"
+  codebook: "/data/registration-codebook/"
   code: ""
 
 
@@ -27,7 +27,6 @@
   license: ""
   citation: "Liu, Yaxuan (2026). From Land to Liquidity: Compensation Design and Local Population Reallocation in Taiwan’s Land-to-the-Tiller Reform. Work in Progress."
   download: "/files/data/taiwan_land_survey_1950_v1.0.zip"
-  readme: "/files/data/LAND_README.md"
-  codebook: "/files/data/LAND_CODEBOOK.md"
+  readme: "/data/land-readme/"
+  codebook: "/data/land-codebook/"
   code: ""
-

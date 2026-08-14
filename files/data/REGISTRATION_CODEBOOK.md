@@ -1,3 +1,12 @@
+---
+layout: default
+title: "台湾户籍人口面板数据集 Codebook"
+permalink: /data/registration-codebook/
+---
+<article class="container dataset-document" markdown="1">
+
+<p class="dataset-document-back"><a href="{{ '/data/' | relative_url }}"><span class="lang-zh">← 返回数据页</span><span class="lang-en">← Back to Data</span></a></p>
+
 # Codebook
 
 ## Main panel
@@ -49,3 +58,5 @@
 | `first_year` | 该来源在面板中的最早年份 | Earliest panel year represented by the source |
 | `last_year` | 该来源在面板中的最晚年份 | Latest panel year represented by the source |
 | `observation_count` | 该来源贡献的单位—年份观测数 | Number of year-unit observations contributed by the source |
+
+</article>
