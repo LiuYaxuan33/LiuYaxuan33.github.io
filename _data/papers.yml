@@ -16,7 +16,7 @@
     pdf: ""
     journal: ""
     appendix: ""
-    slides: ""
+    slides: "files/papers/From_Land_to_Liquidity_Presentation.pdf"
     data:
       - label_zh: "户籍人口面板"
         label_en: "Population Panel"
