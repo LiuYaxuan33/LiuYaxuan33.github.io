@@ -27,7 +27,7 @@
 
 ## Citation
 
-Liu, Yaxuan (2026). *Taiwan Cultivated Land Ownership and Operation Survey Dataset (1950)*, v1.0.
+Liu, Yaxuan (2026). *From Land to Liquidity: Compensation Design and Local Population Reallocation in Taiwan’s Land-to-the-Tiller Reform*. Work in Progress.
 
 ## English summary
 
