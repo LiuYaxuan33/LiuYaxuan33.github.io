@@ -9,10 +9,10 @@
   description_en: "This unbalanced population panel is observed at the year-by-township level and contains 2,542 observations for 237 units in 16 county-level groups in Taiwan from 1947 to 1958. Key variables include total population, male and female population where reported, identifiers for historical localities."
   format: "CSV"
   license: ""
-  citation: "Liu, Yaxuan (2026). Taiwan Household Registration Population Panel Dataset (1947–1958), v1.0."
-  download: "/files/data/taiwan_household_registration_population_panel_1947_1958.zip"
-  readme: "README.md"
-  codebook: "CODEBOOK.md"
+  citation: "Liu, Yaxuan (2026). From Land to Liquidity: Compensation Design and Local Population Reallocation in Taiwan’s Land-to-the-Tiller Reform. Work in Progress."
+  download: "/files/data/taiwan_household_registration_population_panel_1947_1958_v1.0.zip"
+  readme: "files/data/REGISTRATION_README.md"
+  codebook: "files/data/REGISTRATION_CODEBOOK.md"
   code: ""
 
 
@@ -25,9 +25,9 @@
   description_en: "The dataset is organized by localities reported in the 1950 Survey Report on Cultivated Land Ownership and Operation, covering 19 contemporary counties, cities, or administrative authorities, 43 district totals, and 255 township-level records in Taiwan Province. Key variables include paddy and dryland acreage, land operated by owner-cultivators and tenants, private landowners by holding-size class, and public cultivated land by registration and lease status."
   format: "CSV / XLSX"
   license: ""
-  citation: "Liu, Yaxuan (2026). Taiwan Cultivated Land Ownership and Operation Survey Dataset (1950), v1.0."
-  download: "/files/data/taiwan_land_survey_1950.zip"
-  readme: "README.md"
-  codebook: "CODEBOOK.md"
+  citation: "Liu, Yaxuan (2026). From Land to Liquidity: Compensation Design and Local Population Reallocation in Taiwan’s Land-to-the-Tiller Reform. Work in Progress."
+  download: "/files/data/taiwan_land_survey_1950_v1.0.zip"
+  readme: "files/data/LAND_README.md"
+  codebook: "files/data/LAND_CODEBOOK.md"
   code: ""
 
