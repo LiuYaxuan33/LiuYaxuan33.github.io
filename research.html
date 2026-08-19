@@ -6,9 +6,8 @@ permalink: /research/
 <header class="page-hero container narrow-left">
   <p class="eyebrow"><span class="lang-zh"></span><span class="lang-en"></span></p>
   <h1><span class="lang-zh">研究</span><span class="lang-en">Research</span></h1>
-  <p class="lang-zh">工作论文、进行中的研究与正式发表成果。PDF、数据和复现代码会在可公开时列于论文下方。</p>
-  <p class="lang-en">Working papers, ongoing projects, and publications. PDFs, data, and replication code are linked
-    whenever publicly available.</p>
+  <p class="lang-zh"></p>
+  <p class="lang-en"></p>
 </header>
 <div class="container research-list">
   {% assign types = "job_market,working,publication,progress,other" | split: "," %}
@@ -34,9 +33,8 @@ permalink: /research/
             href="{{ paper.links.journal }}">Journal ↗</a>{% endif %}{% if paper.links.appendix != "" %}<a
             href="{{ paper.links.appendix | relative_url }}">Appendix</a>{% endif %}{% if paper.links.slides != "" %}<a
             href="{{ paper.links.slides | relative_url }}">Slides</a>{% endif %}{% if paper.links.data %}<a
-            href="{{ '/data/' | relative_url }}"><span class="lang-zh">数据</span><span
-              class="lang-en">Data</span></a>{% endif %}{% if paper.links.code != "" %}<a
-            href="{{ paper.links.code }}">Code</a>{% endif %}</div>
+            href="{{ '/data/' | relative_url }}"><span class="lang-zh">数据</span><span class="lang-en">Data</span></a>{%
+          endif %}{% if paper.links.code != "" %}<a href="{{ paper.links.code }}">Code</a>{% endif %}</div>
       </div>
     </article>{% endfor %}
   </section>{% endif %}{% endfor %}

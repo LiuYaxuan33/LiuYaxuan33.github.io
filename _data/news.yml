@@ -1,7 +1,12 @@
 # 日期建议写成 YYYY-MM-DD；最新内容放在最上面。
 - date: "2026-08-13"
-  zh: "网站建立。"
+  zh: "本网站建立。"
   en: "Website created."
+  url: ""
+
+- date: "2026-08-19"
+  zh: "接到诈骗电话，近期请注意防骗。如有本人电话，请要求其讲几句家乡方言。"
+  en: "Received a scam call. Please be cautious of fraud. If you receive a call from someone claiming to be me, ask him to say a few phrases in my local dialect."
   url: ""
 
 
