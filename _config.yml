@@ -36,6 +36,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - data.html
+  - files/data
   - vendor
   - outputs
   - work
