@@ -1,0 +1,175 @@
+% Compile with PDFLaTeX.
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[top=0.60in,bottom=0.56in,left=0.67in,right=0.67in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella}
+\usepackage[scale=0.92]{tgheros}
+\usepackage{microtype}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\definecolor{navy}{HTML}{173B5E}
+\definecolor{ink}{HTML}{20262D}
+\definecolor{muted}{HTML}{5A6570}
+\definecolor{rulegray}{HTML}{AEB8C2}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=navy,
+  linkcolor=navy,
+  pdfauthor={Yaxuan Liu},
+  pdftitle={Yaxuan Liu - Curriculum Vitae},
+  pdfsubject={Academic curriculum vitae},
+  pdfkeywords={economic history, political economy, historical sociology, applied microeconomic theory}
+}
+\urlstyle{same}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{2em}
+\color{ink}
+
+\titleformat{\section}
+  {\large\bfseries\sffamily\color{navy}}
+  {}{0pt}{}
+  [\vspace{0.10em}{\color{rulegray}\titlerule[0.55pt]}]
+\titlespacing*{\section}{0pt}{0.72em}{0.30em}
+
+\setlist[itemize]{
+  leftmargin=1.05em,
+  itemsep=0.12em,
+  topsep=0.18em,
+  parsep=0pt,
+  partopsep=0pt,
+  label=\textcolor{navy}{\raisebox{0.15ex}{\scriptsize\textbullet}}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{\scriptsize\sffamily\color{muted}Yaxuan Liu \textbar{} Curriculum Vitae \textbar{} August 2026}
+\fancyfoot[R]{\scriptsize\sffamily\color{muted}Page \thepage{} of 2}
+\setlength{\footskip}{18pt}
+
+\newcommand{\cvdate}[1]{\small\sffamily\color{muted}#1}
+\newcommand{\institution}[1]{\small\itshape\color{muted}#1}
+\newcommand{\cventry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedleft\arraybackslash}p{0.155\textwidth}@{\hspace{0.85em}}X@{}}
+    \cvdate{#1} & \textbf{#2}\hfill\institution{#3}\\[-0.22em]
+                 & #4
+  \end{tabularx}\par\vspace{0.34em}
+}
+\newcommand{\cvshortentry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedleft\arraybackslash}p{0.155\textwidth}@{\hspace{0.85em}}X@{}}
+    \cvdate{#1} & \textbf{#2}\hfill\institution{#3}
+  \end{tabularx}\par\vspace{0.34em}
+}
+\newcommand{\cvline}[2]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedleft\arraybackslash}p{0.155\textwidth}@{\hspace{0.85em}}X@{}}
+    \cvdate{#1} & #2
+  \end{tabularx}\par\vspace{0.16em}
+}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{25}{29}\selectfont\bfseries\sffamily\color{navy}Yaxuan Liu}\par
+  \vspace{0.22em}
+  {\small Peking University \textbar{} Exchange Student at UC Berkeley, Fall 2026}\par
+  \vspace{0.30em}
+  {\small\sffamily
+    Berkeley, CA
+    \enspace\textcolor{rulegray}{\textbullet}\enspace
+    \href{mailto:liuyaxuan33@gmail.com}{liuyaxuan33@gmail.com}
+    \enspace\textcolor{rulegray}{\textbullet}\enspace
+    \href{tel:+8613020027071}{+86 130 2002 7071}
+    \enspace\textcolor{rulegray}{\textbullet}\enspace
+    \href{https://liuyaxuan33.github.io}{liuyaxuan33.github.io}
+  }
+\end{center}
+
+\vspace{-0.25em}
+\section{Research Interests}
+\cvline{}{Economic History \textcolor{rulegray}{\textbullet} Political Economy
+  \textcolor{rulegray}{\textbullet} Historical Sociology
+  \textcolor{rulegray}{\textbullet} Applied Microeconomic Theory}
+
+\section{Education}
+\cventry{Sep 2023--Present}{B.A. in Philosophy, Politics \& Economics (PPE)}{Peking University, Yuanpei College}{
+  GPA: 3.788. Economics focus.\par
+  \textit{Graduate coursework:} Game Theory and Applications, Advanced Microeconomics, Advanced Macroeconomics.\par
+  \textit{Other coursework:} Econometrics, Introduction to Artificial Intelligence, Software Design Practice.
+}
+\cventry{Sep 2024--Present}{Yan Fu Class}{Peking University, Division of Social Sciences}{
+  Program for the Development of Innovative Talent in the Social Sciences.
+}
+\cvshortentry{Aug 2026--Dec 2026}{Exchange Student in Economics}{University of California, Berkeley}
+
+\section{Independent Research}
+\cventry{Oct 2025--Present}{\textit{From Land to Liquidity: Compensation Design and Local Population Reallocation in Taiwan's Land-to-the-Tiller Reform}}{School of Economics, Peking University}{
+  \begin{itemize}
+    \item Uses the compensation provisions of the 1953 Land-to-the-Tiller Reform Act and subsequent amendments to study whether making land wealth more liquid encouraged rural population outflows. The analysis draws on township-level population and land statistics published in government reports.
+  \end{itemize}
+}
+\cventry{Apr 2026--Present}{Historical Research on Taiwan's Land Reform}{Department of Sociology, Peking University}{
+  \begin{itemize}
+    \item Advised by Professor Geng Tian. Examines institutional, intellectual, and legal continuities and ruptures through reports from the Central Political School's Graduate School of Land Economics, writings by Hsiao Cheng and other reformers, and legal-historical sources.
+  \end{itemize}
+}
+
+\section{Research Experience}
+\cventry{Mar 2025--Present}{Research Assistant to Professor Yiling Zhao}{School of Economics, Peking University}{
+  \begin{itemize}
+    \item Used batch OCR and natural-language processing to extract student descriptions from U.S. college yearbooks published from the 1900s through the 1930s; examined how coeducation changed the use of gendered language.
+  \end{itemize}
+}
+\cventry{Jun 2025--Present}{Research Assistant to Professor Zenan Wu}{School of Economics, Peking University}{
+  \begin{itemize}
+    \item Worked on industrial organization models of platform markets, using analytical and numerical methods to study platform and seller behavior when consumers can observe product prices.
+  \end{itemize}
+}
+\cventry{Sep 2025--Oct 2025}{Research Assistant to Professor Tianyang Xi}{National School of Development, Peking University}{
+  \begin{itemize}
+    \item Cross-checked biographical records of Chinese government officials against publicly available sources.
+  \end{itemize}
+}
+
+\newpage
+\section{Teaching \& Academic Activities}
+\cventry{Fall 2024, 2025}{Teaching Assistant, Principles of Economics I}{School of Economics, Peking University}{
+  \begin{itemize}
+    \item Led weekly discussion sections and office hours for first-year students; graded assignments and exams.
+  \end{itemize}
+}
+\cventry{Fall 2024}{Co-Leader, PPE Reading Club}{Peking University}{
+  \begin{itemize}
+    \item Organized seminars on ``The Corporation and the Contract: Coase and Beyond''; led discussions of classic and recent work in contract theory and coordinated faculty guests.
+  \end{itemize}
+}
+
+\section{Leadership}
+\cventry{Sep 2023--Jun 2024}{Head, Cultural \& Student Life Department}{Yuanpei College Student Union}{
+  \begin{itemize}
+    \item Planned events for a student community of about 1,000 and managed the department's weekly operations. Led the college team to first place in Group B at the university's annual December Ninth choral festival.
+  \end{itemize}
+}
+
+\section{Honors \& Awards}
+\cvline{2025}{Global Exploration Scholarship}
+\cvline{2024}{China Merchants Securities Scholarship \textcolor{rulegray}{\textbullet} Award for Social Practice and Public Service}
+\cvline{2023}{Li Huirong Scholarship \textcolor{rulegray}{\textbullet} Academic Excellence Award, Yuanpei College}
+
+\section{Methods, Programming \& Languages}
+\cvline{Methods}{Econometrics and causal inference; archival research; analytical and numerical modeling}
+\cvline{Programming}{Python, Stata, R, C++; OCR and natural-language processing; Git/GitHub}
+\cvline{Languages}{Mandarin Chinese (native); English (advanced)}
+
+\end{document}
