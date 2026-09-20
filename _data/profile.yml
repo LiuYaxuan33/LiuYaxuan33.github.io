@@ -19,7 +19,7 @@ photo: "/assets/images/profile.jpg" # 上传照片后改为 /assets/images/profi
 photo_alt_zh: "刘雅轩的个人照片"
 photo_alt_en: "Portrait of Yaxuan Liu"
 cv: "/files/cv/Liu_Yaxuan_CV.pdf" # 上传 CV 后改为 /files/cv/Liu_Yaxuan_CV.pdf
-cv_updated: "2026-08" # 例如 2026-08
+cv_updated: "2026-09" # 例如 2026-08
 
 bio_zh: >-
   我目前就读于北京大学元培学院，修读哲学、政治学与经济学（PPE）专业，主修经济学，并曾赴加州大学伯克利分校交换学习。
