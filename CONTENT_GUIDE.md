@@ -107,7 +107,7 @@ cv_updated: "2026-08"
 
 ## 八、写博客文章
 
-推荐打开 [Pages CMS](https://app.pagescms.org)，用 GitHub 登录后在浏览器中写作。关闭“立即发布”时保存为草稿；打开后再次保存，GitHub Actions 会自动发布，不需要在本地提交或推送。首次登录和日常操作见 [WRITING.md](WRITING.md)。
+推荐打开 [Pages CMS](https://app.pagescms.org)，用 GitHub 登录后在浏览器中写作。关闭“发布到网站”时保存为草稿；打开后再次保存，GitHub Actions 会自动发布，不需要在本地提交或推送。首次登录和日常操作见 [WRITING.md](WRITING.md)。
 
 如果需要在本地写作，也可以复制现有文章。新文件名必须采用：
 
