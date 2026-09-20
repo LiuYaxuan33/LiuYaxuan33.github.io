@@ -12,3 +12,5 @@
 6. 访问 `https://liuyaxuan33.github.io`。
 
 网站内容的详细填充方法见 [CONTENT_GUIDE.md](CONTENT_GUIDE.md)。
+
+博客文章可以通过 [Pages CMS](https://app.pagescms.org) 在浏览器中撰写和发布，无需本地提交；使用说明见 [WRITING.md](WRITING.md)。

@@ -10,7 +10,10 @@ layout: default
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d"
         }}</time>{% if page.tags.size > 0 %}<span> · {{ page.tags | join: " · " }}</span>{% endif %}</p>
   </header>
-  <div class="prose">{{ content }}</div>
+  <div class="prose lang-zh">{{ content }}</div>
+  {% if page.body_en %}
+  <div class="prose lang-en">{{ page.body_en | markdownify }}</div>
+  {% endif %}
   {% include comments.html %}
   <footer class="post-footer">
     <a href="{{ '/blog/' | relative_url }}">← <span class="lang-zh">返回全部文章</span><span class="lang-en">All

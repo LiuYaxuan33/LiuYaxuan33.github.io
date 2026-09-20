@@ -107,7 +107,9 @@ cv_updated: "2026-08"
 
 ## 八、写博客文章
 
-最简单的方法是复制 `_posts/2026-08-13-welcome.md`。新文件名必须采用：
+推荐打开 [Pages CMS](https://app.pagescms.org)，用 GitHub 登录后在浏览器中写作。关闭“立即发布”时保存为草稿；打开后再次保存，GitHub Actions 会自动发布，不需要在本地提交或推送。首次登录和日常操作见 [WRITING.md](WRITING.md)。
+
+如果需要在本地写作，也可以复制现有文章。新文件名必须采用：
 
 `YYYY-MM-DD-english-short-title.md`
 
@@ -124,7 +126,7 @@ tags: [计量经济学, 数据]
 ---
 ```
 
-正文分别放在 `<section class="lang-zh" markdown="1">` 和 `<section class="lang-en" markdown="1">` 之间。如果某篇文章暂时只有一种语言，可以把另一语言写成简短摘要，并注明全文语言。
+中文正文直接写在信息区之后，不需要额外的 HTML 标签。英文正文可以通过写作后台的 **English body** 字段填写；暂时只有中文正文时，该字段可以留空。
 
 ### 博客评论（Giscus）
 

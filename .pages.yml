@@ -1,0 +1,92 @@
+media:
+  input: assets/images/blog
+  output: /assets/images/blog
+  rename: safe
+  categories: [image]
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "blog: create {filename}"
+      update: "blog: update {filename}"
+      delete: "blog: remove {filename}"
+      rename: "blog: rename {oldFilename} to {newFilename}"
+
+content:
+  - name: posts
+    label: 博客文章
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename:
+      template: "{date}-{title}.md"
+      field: false
+    view:
+      primary: title_zh
+      fields: [title_zh, date, published, tags]
+      sort: [date, title_zh]
+      search: [title_zh, title_en, excerpt_zh, tags]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: 文件短名
+        type: string
+        required: true
+        description: "只在新建时用于生成文件名；建议使用简短英文，如 berkeley-4。"
+      - name: published
+        label: 立即发布
+        type: boolean
+        default: false
+        description: "关闭时保存为草稿；准备好后打开并保存，网站会自动发布。"
+      - name: date
+        label: 发布日期
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: title_zh
+        label: 中文标题
+        type: string
+        required: true
+      - name: title_en
+        label: English title
+        type: string
+        required: true
+      - name: excerpt_zh
+        label: 中文摘要
+        type: text
+        required: true
+        options:
+          maxlength: 240
+      - name: excerpt_en
+        label: English summary
+        type: text
+        required: true
+        options:
+          maxlength: 240
+      - name: tags
+        label: 标签
+        type: string
+        list: true
+      - name: body
+        label: 中文正文
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          switcher: true
+      - name: body_en
+        label: English body（可选）
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
+      - name: comments
+        label: 开启评论
+        type: boolean
+        default: true
