@@ -8,8 +8,8 @@ permalink: /cv/
     <h1><span class="lang-zh">个人简历</span><span class="lang-en">Curriculum Vitae</span></h1>
     <p class="lang-zh"></p>
     <p class="lang-en"></p>{% if site.data.profile.cv != "" %}<p><a class="button primary"
-            href="{{ site.data.profile.cv | relative_url }}" download><span class="lang-zh">下载 CV（PDF）</span><span
-                class="lang-en">Download CV (PDF)</span></a></p>
+            href="{{ site.data.profile.cv | relative_url }}"><span class="lang-zh">查看 CV（PDF）</span><span
+                class="lang-en">View CV (PDF)</span></a></p>
     <p class="muted">Last updated: {{ site.data.profile.cv_updated }}</p>{% else %}<div class="notice"><strong
             class="lang-zh">CV 尚未上传</strong><strong class="lang-en">CV not uploaded yet</strong>
         <p class="lang-zh">将文件放入 <code>files/cv/</code>，再更新 <code>_data/profile.yml</code>。</p>
